@@ -1,0 +1,100 @@
+
+var chessboard = {
+    a: {
+        1: "Springer;
+        2: "null";
+        3:
+        4:
+        ...
+    }
+    b: {
+        1: "null";
+        2: "Turm";
+        ...
+    }
+}
+
+enum FIGUREVALUES {
+    NONE = 0
+    BAUER = 1
+    SPRINGER = 3
+    LÄUFER = 4
+    TURM = 5
+    DAME = 6
+    KÖNIG = 7
+}
+
+enum FIELDCHARS {
+    A = 1
+    B = 2
+    C = 3
+    D = 4
+    E = 5
+    F = 6
+    G = 7
+    H = 8
+}
+
+struct position {
+    collum FIELDCHARS
+    row int 
+}
+
+function makePosition(positionX, positionY) position{
+
+}
+
+function possibleMoves(position, figure) positionArr {
+    //TODO: VALIDATE MOVES
+    return arrayWithPositions
+}
+
+function calculateTheRightMove(PointsArrOwn, PointsArrEnemy){
+    //TODO: CALCUTLATE THE RIGHT MOVE
+}
+
+function evaluate(chessboard, PointsArrOwn, PointsArrEnemy, OwnColor, EnemyColor, turn, deepness, maxdeepness, countertovalidatedeepness)  {
+                                                                                                            //turn = enemyturn or onwturn
+                                                                                                            //deepness = how deep the rekursion goes now
+                                                                                                            //maxdeepness = how deep the rekursion can go (maximum)
+    for(positionX in FIELDCHARS){
+        for(positionY in FIELDCHARS){
+            POSITION = makePosition(position X, position Y)
+            //Have to pass turn to VALIDATE wich FIGURE is the ENEMYs and WICH NOT
+            if(figureisAtPosition(POSITION, turn)){
+                FIGURE = getfigureAtPosition(POSITION)
+                possibleMovesArr = possibleMoves(POSITION, FIGURE)
+                for(move in possibleMovesArr){
+                    //TODO: CHECK IF FIGURE GETS BEATEN --> MAYBE NOT?
+                    if(true){
+                        //TODO : addNegativeValueToPointsArray
+                    }
+                    //TODO: CHECK IF ONE MOVE CAN BEAT A ENEMY FIGURE
+                    if(true){
+                        //TODO : addPositiveValueToPointsArray
+                    }
+                    copyofchessboard = manipulateChessBoardWithMove(chessboard, FIGURE, move)
+
+                    countertovalidatedeepness++
+                    if(countertovalidatedeepness == 2){
+                        countertovalidatedeepness = 0
+                        deepness++
+                        if(deepness == maxdeepness){
+                            //TODO : VALIDATE WICH MOVE TO DO
+                            calculateTheRightMove(PointsArrOwn, PointsArrEnemy)
+                        }
+                    }
+                    if(turn = ownturn){
+                        turn = enemyturn
+                        evaluate(copyofchessboard, PointsArrOwn, PointsArrEnemy, OwnColor, EnemyColor, turn, deepness, maxdeepness countertovalidatedeepness)
+
+                    }
+                    else {
+                        turn = onwturn
+                        evaluate(copyofchessboard, PointsArrOwn, PointsArrEnemy, OwnColor, EnemyColor, turn, deepness, maxdeepness, countertovalidatedeepness)
+                    }
+                }
+            }
+        }
+    }
+}

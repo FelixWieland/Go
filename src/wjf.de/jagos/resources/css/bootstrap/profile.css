@@ -1,0 +1,58 @@
+._profile_username {
+	font-family: Zilla-Bold;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	padding-left: 20px;
+}
+
+._profile_avatar img {
+	width: 100%;
+	height: auto;
+}
+
+._profile_avatar {
+	background-color: #ffc107;
+}
+
+._profile_infos {
+	font-family: Zilla-Bold;
+	font-size: 20px;
+	color: black;
+}
+
+._profile_infos ul {
+	font-family: inherit;
+	margin-top: 20px;
+}
+
+._profile_infos ul li {
+	list-style-type: none;
+	border-left: 4px solid black;
+	margin: 2px;
+	padding-left: 15px;
+	font-family: inherit;
+	font-size: 20px;
+}
+
+._profile_documentations ul li {
+	list-style: none;
+	font-family: Zilla-Bold;
+	font-size: 20px;
+	color: black;
+	background-color: #00AA8d;
+	margin: 0px;
+	border-bottom: 2px solid white;
+	padding: 5px;
+	padding-left: 20px;
+}
+
+._profile_documentations ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+._profile_documentations {
+	padding: 0px;
+}

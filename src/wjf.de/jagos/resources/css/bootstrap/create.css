@@ -1,0 +1,139 @@
+#_create_documentation-hidden-id, #_create_content-hidden-id {
+	display: none;
+}
+
+._create_tool {
+	font-family: Zilla-Bold;
+	background-color: black;
+	padding: 10px;
+	float: left;
+	font-size: 20px;
+	color: white;
+	margin: 5px;
+}
+
+._create_tool:hover {
+	cursor: pointer;
+}
+
+._create_toolbar {
+	padding-bottom: 15px;
+	border-bottom: 10px solid #c6573c;
+	margin-bottom: 15px;
+	overflow-y: auto;
+}
+
+._create_pattern {
+	width: 100%;
+	margin-top: 5px;
+}
+
+._create_pattern p {
+	float: left;
+	width: 15%;
+	overflow: hidden;
+	font-family: Zilla-Bold;
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+._create_pattern select {
+	float: left;
+	width: 15%;
+	overflow: hidden;
+	font-family: Zilla-Bold;
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	border: none;
+}
+
+._create_pattern select:hover {
+	outline: none;
+}
+
+._create_pattern input {
+	float: left;
+	width: calc( 85% - 10px - 30px);
+	font-family: Zilla-Medium;
+	font-size: 18px;
+	border: none;
+	border-left: 2px solid black;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-bottom: 1px solid black;
+}
+
+._create_pattern input:focus {
+	outline: none;
+}
+
+._create_pattern textarea {
+	float: left;
+	width: calc( 85% - 10px);
+	font-family: Zilla-Medium;
+	font-size: 18px;
+	border: none;
+	border-left: 2px solid black;
+	margin-left: 10px;
+	padding-left: 10px;
+	border-bottom: 1px solid black;
+	resize: none;
+}
+
+._create_pattern textarea:focus {
+	outline: none;
+}
+
+._create_pattern button {
+	width: 30px;
+	font-family: Zilla-Bold;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	float: right;
+	border: none;
+	outline: none;
+	padding: 2px;
+}
+
+._large_elm_btn {
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+#_create_save_doc-id, #_create_save_content-id {
+	width: 100%;
+	font-family: Zilla-Bold;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+#_create_save_doc-id:hover, #_create_save_content-id:hover {
+	cursor: pointer;
+}
+
+._create_choose div {
+	font-family: Zilla-Bold;
+	background-color: black;
+	color: white;
+	font-size: 35px;
+	padding: 45px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	border: 10px solid white;
+}
+
+._create_choose div:hover {
+	cursor: pointer;
+}

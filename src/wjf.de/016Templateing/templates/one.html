@@ -1,0 +1,22 @@
+{{$s := .}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{$s.Title}}</title>
+</head>
+<body>
+    {{$s.Text}}
+    {{range $s.Rest}}
+        {{.}}
+    {{end}}
+
+    {{$s.Time.Format "01.02.2006"}}
+    {{/* Comment */}}
+    {{uc}}
+    {{ft $s.Text}}
+    
+    {{template "head" $s.Time.Format "01.02.2006"}}
+</body>
+</html>
