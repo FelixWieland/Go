@@ -172,6 +172,7 @@ func (Manager *ManagerInformations) GetConnectedNodes() ([]NodeInformations, err
 	return allNodes, nil
 }
 
+//Logout Logs the current Node out from the Manager
 func (Node *NodeInformations) Logout(Manager *ManagerInformations) (bool, error) {
 	url := "http://" + byteArrToString(Manager.IP) + ":" + strconv.Itoa(Manager.Port) + "/LOGOUT/&AuthKey=" + Manager.AuthKey + "&NodeID=" + Node.ID
 	rs, err := http.Get(url)
