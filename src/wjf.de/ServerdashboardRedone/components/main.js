@@ -1,3 +1,4 @@
+
 // Obtain the root
 const rootElement = document.getElementById('root')
 // Create a ES6 class component
@@ -19,11 +20,13 @@ class List extends React.Component {
     }
 }
 
+
+
 // Create a function to wrap up your component
 function App(){
   return(
     <div>
-      <List name="Test"/>
+      <Menu />
     </div>
   )
 }
