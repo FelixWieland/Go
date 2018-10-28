@@ -19,12 +19,11 @@ func init() {
 }
 
 func main() {
-
 	router := httprouter.New()
 	router.GET("/plc/*path", serveFiles)
 	router.GET("/reloadTemplates", reloadTemplates)
 	router.GET("/", index)
-	http.ListenAndServe(":80", router)
+	http.ListenAndServe(":8080", router)
 }
 
 func index(w http.ResponseWriter, req *http.Request, ps httprouter.Params) {
